@@ -28,6 +28,7 @@ class Review
     @viewer = viewer
 
     self.class.all << self
+  end
 
 
 
