@@ -12,4 +12,15 @@ class Movie
     @@all
   end
 
+  def reviews
+    Review.all.select {|reviews| reviews.movie == self}
+  end
+
+  def reviewers
+    Viewer.all.map {|reviewers| reviewers.reviews == self}
+  end
+
+  def highest_rated
+      
+  end
 end
