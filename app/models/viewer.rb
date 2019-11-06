@@ -41,3 +41,18 @@ class Viewer
   end
   
 end
+
+
+# `Viewer#username`
+# - returns the Viewer's username
+    def username 
+      viewer.select|viewer|
+      viewer.username == self 
+
+
+    def Viwer.all 
+      Viewer.all.map do |instance|
+        instance.username
+      end 
+    end 
+        
