@@ -12,4 +12,12 @@ class Movie
     @@all
   end
 
+  def reviews
+    Review.all.select{|reviews|reviews.movie == self}
+  end
+
+  def reviewers
+    reviews.map{|viewers|viewers.movie}
+  end
+
 end
