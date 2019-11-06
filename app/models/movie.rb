@@ -8,6 +8,10 @@ class Movie
     self.class.all << self
   end
 
+  def average
+    self.sum / self.length.to_f 
+  end 
+
   def self.all
     @@all
   end
@@ -28,7 +32,7 @@ class Movie
     ratings = reviews.map do |my_review_instance|
       my_review_instance.rating 
     end 
-    ratings.average 
+    ratings.sum 
   end
   
   def self.highest_rated
