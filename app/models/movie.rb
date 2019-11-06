@@ -11,20 +11,18 @@ class Movie
 
 
   @@all = []
-
-
-  # - `Movie#initialize(title)`
-  #   - `Movie` is initialized with a title (string)
-  def initialize(title)
-    @title = title
-    self.class.all << self
-  end
-
   # - `Movie.all`
   #   - returns an array of all the `Movie` instances that have been initialized
   def self.all
     @@all
   end
+
+    # - `Movie#initialize(title)`
+    #   - `Movie` is initialized with a title (string)
+    def initialize(title)
+      @title = title
+      self.class.all << self
+    end
 
 
   # - `Movie#reviews`
@@ -37,6 +35,26 @@ class Movie
   #   - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
   def reviewers
     self.reviews.map {|review| review.viewer}
+  end
+
+  # - `Movie#average_rating`
+  #   - returns the average of all ratings for the `Movie` instance
+  #   - to average ratings, add all ratings together and divide by the total number of ratings.
+
+  def average_rating
+    # if self.reviews == true
+    if reviews.length == 0
+      0
+    else
+    reviews.map{|rev| rev.rating}.sum/reviews.count
+  end
+  # end
+  end
+
+  # - `Movie.highest_rated`
+  #   - returns the `Movie` instance with the highest average rating.
+  def self.highest_rated
+    self.all.max_by{|rev| rev.average_rating}
   end
 
 end

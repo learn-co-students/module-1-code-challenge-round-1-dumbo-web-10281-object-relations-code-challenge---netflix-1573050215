@@ -17,6 +17,7 @@ fra = Viewer.new("Frank")
 rog = Viewer.new("Roger Ebert")
 
 frank_parasite = Review.new(fra, para, 8.0)
+rog_para = Review.new(rog, para, 2)
 
 
 
