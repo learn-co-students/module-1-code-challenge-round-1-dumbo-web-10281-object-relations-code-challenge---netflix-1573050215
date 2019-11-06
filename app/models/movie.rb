@@ -8,7 +8,7 @@ class Movie
     self.class.all << self
   end
 
-  def average
+  def average 
     self.sum / self.length.to_f 
   end 
 
