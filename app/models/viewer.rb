@@ -54,7 +54,7 @@ class Viewer
       reviews.find{|review| review.movie == movie}.rating = rating
     else
       Review.new(self, movie, rating)
-    end 
+    end
   end
 
 
