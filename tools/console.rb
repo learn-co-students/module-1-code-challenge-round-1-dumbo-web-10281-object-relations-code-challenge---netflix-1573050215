@@ -11,6 +11,20 @@ end
 # so they will be available to test and play around with in your console
 
 
+m1 = Movie.new("My Life")
+m2 = Movie.new("Titanic")
+m3 = Movie.new("Eat Pray Love")
+
+v1 = Viewer.new("KewlGurl123")
+v2 = Viewer.new("Robot")
+v3 = Viewer.new("Tim")
+
+r1 = Review.new("v1", "m3", 10)
+r2 = Review.new("v2", "m3", 2)
+r3 = Review.new("v1", "m2", 6)
+r4 = Review.new("v3", "m1", 7)
+
+
 
 
 
