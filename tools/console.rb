@@ -6,9 +6,11 @@ def reload
   load 'config/environment.rb'
 end
 
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
+m1 =Move.new("Scarface",1000)
+m2 =Move.new("Topgun",2000)
+m3 =Move.new("Pearl Harbor",3000)
+
+R1 = Review.new()
 
 
 
