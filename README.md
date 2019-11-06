@@ -47,30 +47,30 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Movie
 
 - `Movie#initialize(title)`
-  - `Movie` is initialized with a title (string)
+  [X]- `Movie` is initialized with a title (string)
   - title **can be** changed after the `Movie` is initialized
-- `Movie#title`
+[X]- `Movie#title`
   - returns the `Movie`'s title
-- `Movie.all`
+[X]- `Movie.all`
   - returns an array of all the `Movie` instances that have been initialized
 
 #### Viewer
 
 - `Viewer#initialize(username)`
-  - `Viewer` is initialized with a username (string)
+  [X]- `Viewer` is initialized with a username (string)
   - username **can be** changed after the Viewer is initialized
-- `Viewer#username`
+[X]- `Viewer#username`
   - returns the Viewer's username
-- `Viewer.all`
+[X]- `Viewer.all`
   - returns an array of all the Viewer instances that have been initialized
 
 #### Review
 
-- `Review#initialize(viewer, movie, rating)`
+[X]- `Review#initialize(viewer, movie, rating)`
   - `Review` is initialized with a `Viewer` instance, a `Movie` instance, and a rating (number)
-- `Review#rating`
+[X]- `Review#rating`
   - returns the rating for the `Review` instance
-- `Review.all`
+[X]- `Review.all`
   - returns an array of all initialized `Review` instances
 
 ### Object Relationship Methods
@@ -84,14 +84,14 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Viewer
 
-- `Viewer#reviews`
+[X]- `Viewer#reviews`
   - returns an array of `Review` instances associated with the `Viewer` instance.
-- `Viewer#reviewed_movies`
+[X]- `Viewer#reviewed_movies`
   - returns an array of `Movie` instances reviewed by the `Viewer` instance.
 
 #### Movie
 
-- `Movie#reviews`
+[X]- `Movie#reviews`
   - returns an array of all the `Review` instances for the `Movie`.
 - `Movie#reviewers`
   - returns an array of all of the `Viewer` instances that reviewed the `Movie`.
