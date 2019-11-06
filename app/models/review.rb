@@ -10,8 +10,8 @@ class Review
   #   - returns the `Viewer` instance associated with the `Review` instance
   # - `Review#movie`
   #   - returns the `Movie` instance associated with the `Review` instance
-  attr_reader :rating, :viewer, :movie
-
+  attr_reader :viewer, :movie
+  attr_accessor :rating
   # - `Review.all`
   #   - returns an array of all initialized `Review` instances
   @@all = []
